@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-nrif
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-nrif
+    app.kubernetes.io/part-of: ci10t-776-0039-app
+  name: devfile-sample-nrifx1ox
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-nrif
+    weight: null
+status: {}

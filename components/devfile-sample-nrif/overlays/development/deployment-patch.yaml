@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nrif
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0039-tenant/ci10t-776-0039-app/devfile-sample-nrif@sha256:64803ce1239539d2364927c1d5ab69258445c4809e08e672e37ce123865bf45a
+        name: my-nodejs
+        resources: {}
+status: {}
